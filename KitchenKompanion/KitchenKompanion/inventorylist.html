@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitchen Inventory</title>
+    <link rel="stylesheet" href="styles/inventory.css" />
+    
+  </head>
+  <body>
+    <div class="container" id="screen">
+      <div class="inventory-app">
+        <h2>Kitchen Inventory </h2>
+        <div class="row">
+          <input type="text" id="item-name" placeholder="Enter item name">
+          <div style="display: flex; gap: 8px;">
+          <input type="number" id="item-quantity" min="0" value="1" style="width: 70px;">
+          <select id="item-unit">
+            <option value="units">units</option>
+            <option value="lbs">lbs</option>
+            <option value="kg">kg</option>
+            <option value="oz">oz</option>
+          </select>
+          </div>
+          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for items...">
+          <br>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <label for="item-expiration">Expiration Date:</label>
+            <input type="date" id="item-expiration" />
+          </div>
+
+
+          </select>
+
+          <br>
+<div style="display: flex; align-items: center; gap: 8px;">
+  <label for="item-location">Location:</label>
+  <select id="item-location">
+    <option value="" disabled selected>Select a location</option>
+    <option value="Fridge">Fridge</option>
+    <option value="Freezer">Freezer</option>
+    <option value="Pantry">Pantry</option>
+  </select>
+</div>
+
+          <button type="button" id="add-location-btn">+ Add Location</button>
+
+          <button onclick="addItem()" class="small-button">+ Add</button>
+          </div>
+          <ul id="inventory-list"></ul>
+          <button id="reset-app-btn">🧹 Reset App</button>
+
+
+
+
+          </div>
+           <div class="navbar">
+           <a href="./">
+            <img
+            src="./images/NavHouse.png"
+            alt="Inventory"
+            class="nav-house-icon"/>
+          </a>
+          <a href="./recipes.html"
+          ><img src="./images/NavSoup.png" alt="Recipes" class="nav-icon"
+            /></a>
+            <a href="./list.html"
+              ><img
+                src="./images/NavProfile.png"
+                alt="Grocery List"
+                class="nav-profile-icon"
+            /></a>
+            <a href="./myaccount.html"
+              ><img
+                src="./images/NavAccount.png"
+                alt="Account"
+                class="nav-profile-icon"
+            /></a>
+      </div>
+    </div>
+    <script src="Scripts/todolist.js"></script>
+  </body>
+</html>

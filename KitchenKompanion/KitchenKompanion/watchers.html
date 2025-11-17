@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <link rel="stylesheet" href="styles/myaccount.css" />
+  </head>
+  <body>
+    <div id="screen">
+      <!-- Add watcher modal -->
+      <div id="add-watcher-modal" class="modal">
+        <!--  -->
+        <div class="watchers-modal-content">
+          <span class="close">&times;</span>
+          <p>Enter new watcher's name and relationship to household.</p>
+          <div class="name-row">
+            <label for="name-text">Name:</label>
+            <input type="text" id="watcher-name-text" placeholder="Jane Doe" />
+          </div>
+          <div class="name-row">
+            <label for="relationship-text">Relationship:</label>
+            <input
+              type="text"
+              id="relationship-text"
+              placeholder="Wendy's Mom"
+            />
+          </div>
+
+          <br />
+          <br />
+          <input type="button" value="Add Watcher" id="add-watcher" />
+        </div>
+
+        <img src="images/phonekeyboard.jpg" id="phone-keyboard" />
+      </div>
+
+      <div id="member-tab-container">
+        <img src="images/watchertabbackground.png" id="member-tab" />
+        <a href="household.html" id="watchers-members-header">Members</a>
+        <a href="watchers.html" id="watchers-watchers-header">Watchers</a>
+      </div>
+      <div id="contents">
+        <!-- add watcher modal opener button -->
+        <button id="add-watcher-button">+ Add Watcher</button>
+        <p id="permissions"><i>Can view Inventory and Grocery List.</i></p>
+        <div id="watcher-list">
+          <div class="watcher">
+            <div class="profile-pic"></div>
+            <div class="user-info">
+              <h3 class="member-name">Natalie</h3>
+              <p class="member-allergies">Anthony's Older Sister</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar">
+       <a href="./inventorylist.html">
+  <img src="./images/NavHouse.png" alt="Inventory" class="nav-house-icon" />
+</a>
+
+        <a href="./recipes.html"
+          ><img src="./images/NavSoup.png" alt="Recipes" class="nav-icon"
+        /></a>
+        <a href="./list.html"
+          ><img
+            src="./images/NavProfile.png"
+            alt="Grocery List"
+            class="nav-profile-icon"
+        /></a>
+        <a href="./myaccount.html"
+          ><img
+            src="./images/NavAccount.png"
+            alt="Account"
+            class="nav-profile-icon"
+        /></a>
+      </div>
+    </div>
+    <script src="scripts/watcherscript.js"></script>
+  </body>
+</html>

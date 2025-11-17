@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <link rel="stylesheet" href="styles/myaccount.css" />
+  </head>
+  <body>
+    <div id="screen">
+      <!-- Add allergy modal -->
+      <div id="add-allergy-modal" class="modal">
+        <div class="allergy-modal-content">
+          <span class="close">&times;</span>
+          <h2>New Allergy</h2>
+          <p>Select allergies to add:</p>
+          <!-- <input type="text" id="allergy-text" placeholder="New allergy" /> -->
+          <form id="allergen-form">
+            <div class="allergen-grid">
+              <label
+                ><input
+                  type="checkbox"
+                  name="allergen"
+                  class="larger"
+                  value="Peanuts"
+                />
+                Peanuts</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="allergen"
+                  class="larger"
+                  value="Milk"
+                />
+                Milk</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="allergen"
+                  class="larger"
+                  value="Eggs"
+                />
+                Eggs</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="allergen"
+                  class="larger"
+                  value="Shellfish"
+                />
+                Shellfish</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="allergen"
+                  class="larger"
+                  value="Wheat"
+                />
+                Wheat</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="allergen"
+                  class="larger"
+                  value="Soy"
+                />
+                Soy</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="allergen"
+                  class="larger"
+                  value="Tree nuts"
+                />
+                Tree nuts</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="allergen"
+                  class="larger"
+                  value="Fish"
+                />
+                Fish</label
+              >
+            </div>
+            <br />
+            <button type="submit" id="add-allergy">Add Allergy</button>
+          </form>
+        </div>
+      </div>
+      <div id="user-basic-contents">
+        <div id="profile-pic-placeholder"></div>
+        <h2 id="username">Jane Doe</h2>
+
+        <p id="user-account-type">Household Member</p>
+      </div>
+      <div id="contents">
+        <h2 id="allergy-header">My Allergies</h2>
+        <div id="allergy-list">
+          <div id="allergy">Peanuts, Shellfish</div>
+        </div>
+
+        <!-- add allergy modal opener button -->
+        <button id="add-allergy-button">+ Add Allergy</button>
+
+        <hr />
+
+        <h2 id="household-header">Household</h2>
+        <div id="add-remove-members-button">
+          <a href="./household.html" id="add-remove-members-link"
+            >+ Add/Remove Members</a
+          >
+        </div>
+      </div>
+
+      <div class="navbar">
+        <a href="./inventorylist.html">
+          <img
+            src="./images/NavHouse.png"
+            alt="Inventory"
+            class="nav-house-icon"
+          />
+        </a>
+
+        <a href="./recipes.html"
+          ><img src="./images/NavSoup.png" alt="Recipes" class="nav-icon"
+        /></a>
+        <a href="./list.html"
+          ><img
+            src="./images/NavProfile.png"
+            alt="Grocery List"
+            class="nav-profile-icon"
+        /></a>
+        <a href="./myaccount.html"
+          ><img
+            src="./images/NavAccount.png"
+            alt="Account"
+            class="nav-profile-icon"
+        /></a>
+      </div>
+    </div>
+    <script src="scripts/myaccountscript.js"></script>
+  </body>
+</html>

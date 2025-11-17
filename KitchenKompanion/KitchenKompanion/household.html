@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <link rel="stylesheet" href="styles/myaccount.css" />
+  </head>
+  <body>
+    <div id="screen">
+      <!-- Add member modal -->
+      <div id="add-member-modal" class="modal">
+        <!--  -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Enter new member's name and allergies.</p>
+          <div class="name-row">
+            <label for="name-text">Name:</label>
+            <input type="text" id="name-text" placeholder="Jane Doe" />
+          </div>
+          <p>Allergies:</p>
+          <form id="allergen-form">
+            <div class="allergen-grid">
+              <label
+                ><input
+                  type="checkbox"
+                  name="allergen"
+                  class="larger"
+                  value="Peanuts"
+                />
+                Peanuts</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="allergen"
+                  class="larger"
+                  value="Milk"
+                />
+                Milk</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="allergen"
+                  class="larger"
+                  value="Eggs"
+                />
+                Eggs</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="allergen"
+                  class="larger"
+                  value="Shellfish"
+                />
+                Shellfish</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="allergen"
+                  class="larger"
+                  value="Wheat"
+                />
+                Wheat</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="allergen"
+                  class="larger"
+                  value="Soy"
+                />
+                Soy</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="allergen"
+                  class="larger"
+                  value="Tree nuts"
+                />
+                Tree nuts</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="allergen"
+                  class="larger"
+                  value="Fish"
+                />
+                Fish</label
+              >
+            </div>
+            <br />
+            <button type="submit" id="add-member">Add Member</button>
+          </form>
+        </div>
+
+        <img src="images/phonekeyboard.jpg" id="phone-keyboard" />
+      </div>
+      <div id="member-tab-container">
+        <img src="images/tabbackground.png" id="member-tab" />
+        <a href="household.html" id="household-members-header">Members</a>
+        <a href="watchers.html" id="household-watchers-header">Watchers</a>
+      </div>
+      <div id="contents">
+        <!-- add member modal opener button -->
+        <button id="add-member-button">+ Add Member</button>
+        <p id="permissions"><i>Can edit Inventory and Grocery List.</i></p>
+        <div id="member-list">
+          <div class="member">
+            <div class="profile-pic"></div>
+            <div class="user-info">
+              <h3 class="member-name">Wendy</h3>
+              <p class="member-allergies">Allergies: Peanuts, shellfish</p>
+            </div>
+          </div>
+          <div class="member">
+            <div class="profile-pic"></div>
+            <div class="user-info">
+              <h3 class="member-name">Terence</h3>
+              <p class="member-allergies">Allergies: Milk</p>
+            </div>
+          </div>
+          <div class="member">
+            <div class="profile-pic"></div>
+            <div class="user-info">
+              <h3 class="member-name">Anthony</h3>
+              <p class="member-allergies">Allergies: Shellfish</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar">
+       <a href="./inventorylist.html">
+  <img src="./images/NavHouse.png" alt="Inventory" class="nav-house-icon" />
+</a>
+
+        <a href="./recipes.html"
+          ><img src="./images/NavSoup.png" alt="Recipes" class="nav-icon"
+        /></a>
+        <a href="./list.html"
+          ><img
+            src="./images/NavProfile.png"
+            alt="Grocery List"
+            class="nav-profile-icon"
+        /></a>
+        <a href="./myaccount.html"
+          ><img
+            src="./images/NavAccount.png"
+            alt="Account"
+            class="nav-profile-icon"
+        /></a>
+      </div>
+    </div>
+    <script src="scripts/householdscript.js"></script>
+  </body>
+</html>

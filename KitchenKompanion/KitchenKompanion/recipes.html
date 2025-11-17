@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes</title>
+    <link rel="stylesheet" href="styles/recipes.css" />
+  </head>
+  <body>
+    <div id="screen">
+      <header>
+        <h1>Recipe List</h1>
+        <div class="profile-selector">
+          <label for="active-user">Active User:</label>
+          <select id="active-user" class="user-dropdown">
+            <option value="">Select a user</option>
+          </select>
+        </div>
+      </header>
+
+      <div class="search-bar">
+        <form action="#">
+          <input type="search" placeholder="Search recipes..." name="search" />
+        </form>
+        
+        <div class="filter-controls">
+          <!-- Add Delete All Recipes button -->
+          <!-- <button id="delete-all-recipes" class="delete-all-button">Delete All Recipes</button> -->
+          
+          <!-- Add allergy filter dropdown -->
+          <div class="allergy-filter">
+            <label for="allergy-filter">Hide recipes with allergens:</label>
+            <input type="checkbox" id="allergy-filter" class="filter-checkbox">
+          </div>
+        </div>
+      </div>
+
+    <div id="recipeList">
+      
+
+      <button class="add-recipe-button">+ Add Recipe</button>
+
+      <div class="navbar">
+       <a href="./inventorylist.html">
+  <img src="./images/NavHouse.png" alt="Inventory" class="nav-house-icon" />
+</a>
+
+        <a href="./recipes.html"
+          ><img src="./images/NavSoup.png" alt="Recipes" class="nav-icon"
+        /></a>
+        <a href="./list.html"
+          ><img
+            src="./images/NavProfile.png"
+            alt="Grocery List"
+            class="nav-profile-icon"
+        /></a>
+        <a href="./myaccount.html"
+          ><img
+            src="./images/NavAccount.png"
+            alt="Account"
+            class="nav-profile-icon"
+        /></a>
+      </div>
+
+      <div id="recipeFormContainer">
+        <form id="recipeForm">
+          <h2>Add a New Recipe</h2>
+          <label for="recipeName">Recipe Name:</label>
+          <input type="text" id="recipeName" name="recipeName" required maxlength="40" />
+          <br />
+          <label for="description">Summary:</label>
+          <textarea id="description" name="description" rows="4" required maxlength="70"></textarea>
+          <br />
+          <label for="fullDescription">Full Description:</label>
+          <textarea id="fullDescription" name="fullDescription" rows="6" ></textarea>
+          <br />
+          <label for="tags">Tags (comma-separated):</label>
+          <input type="text" id="tags" name="tags" placeholder="e.g., Healthy, Quick Meal" maxlength="60" />
+          <br />
+          <label for="ingredients">Ingredients:</label>
+          <div id="ingredientsContainer">
+            <div class="ingredient-row">
+              <input type="text" class="ingredient-name" placeholder="Ingredient" maxlength="60" />
+              <input type="text" class="ingredient-size" placeholder="Serving Size" />
+              <button type="button" class="remove-ingredient">Remove</button>
+            </div>
+          </div>
+          <button type="button" id="addIngredient">+ Add Ingredient</button>
+          <br />
+          <button type="submit" id="submitBtn">Submit Recipe</button>
+          <button type="button" id="closeForm">Cancel</button>
+        </form>
+      </div>
+
+      <div id="formOverlay"></div>
+    </div>
+    
+      <div id="recipeModal" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <div id="modalRecipeDetails"></div>
+        </div>
+      </div>
+    
+    <script src="scripts/recipes.js"></script>
+  </body>
+</html>

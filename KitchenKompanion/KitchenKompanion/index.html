@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitchen Inventory</title>
+    <link rel="stylesheet" href="styles/inventory.css" />
+    
+  </head>
+  <body>
+    <div class="container" id="screen">
+      <div class="inventory-app">
+        <h2>Kitchen Inventory </h2>
+        <div class="row">
+          <input type="text" id="item-name" placeholder="Enter item name">
+          <input type="text" id="item-quantity" placeholder="Quantity (e.g., 2 kg, 1.5 lbs)">
+
+          <input type="text" id="item-location" placeholder="Location (e.g., fridge)">
+          <input type="date" id="item-expiration">
+          <button onclick="addItem()">+ Add</button>
+        </div>
+        <ul id="inventory-list"></ul>
+
+
+      </div>
+      <div class="navbar">
+        <a href="./inventorylist.html">
+  <img src="./images/NavHouse.png" alt="Inventory" class="nav-house-icon" />
+</a>
+
+        <a href="./recipes.html"
+          ><img src="./images/NavSoup.png" alt="Recipes" class="nav-icon"
+        /></a>
+        <a href="./list.html"
+          ><img
+            src="./images/NavProfile.png"
+            alt="Grocery List"
+            class="nav-profile-icon"
+        /></a>
+        <a href="./myaccount.html"
+          ><img
+            src="./images/NavAccount.png"
+            alt="Account"
+            class="nav-profile-icon"
+        /></a>
+
+      </div>
+    </div>
+    <script src="Scripts/todolist.js"></script>
+  </body>
+</html>

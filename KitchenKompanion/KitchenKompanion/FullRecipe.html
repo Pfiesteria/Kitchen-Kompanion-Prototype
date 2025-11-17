@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Details</title>
+  <link rel="stylesheet" href="styles/recipes.css" />
+  <link rel="stylesheet" href="styles/fullRecipe.css" />
+</head>
+<body>
+  <div id="screen">
+    <header>
+      <h1 id="recipeName">Recipe Details</h1>
+    </header>
+
+    <div id="recipeContent">
+      <div id="recipeTags" class="tags"></div>
+      <p id="recipeDescription"></p>
+      
+      <div id="recipeFullDescription" class="full-description">
+        <h3>Preparation</h3>
+        <p id="fullDescriptionText"></p>
+      </div>
+      
+      <h3>Ingredients</h3>
+      <ul id="ingredientsList" class="ingredients-list"></ul>
+      
+      <div class="recipe-buttons">
+        <button id="backToRecipes" class="back-button">Back to Recipes</button>
+        <button id="editRecipe" class="edit-button">Edit Recipe</button>
+        <button id="deleteRecipe" class="delete-button">Delete Recipe</button>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <a href="./inventorylist.html">
+        <img src="./images/NavHouse.png" alt="Inventory" class="nav-house-icon" />
+      </a>
+      <a href="./recipes.html">
+        <img src="./images/NavSoup.png" alt="Recipes" class="nav-icon" />
+      </a>
+      <a href="./list.html">
+        <img src="./images/NavProfile.png" alt="Grocery List" class="nav-profile-icon" />
+      </a>
+      <a href="./myaccount.html">
+        <img src="./images/NavAccount.png" alt="Account" class="nav-profile-icon" />
+      </a>
+    </div>
+  </div>
+
+  <script src="scripts/FullRecipe.js"></script>
+</body>
+</html>
